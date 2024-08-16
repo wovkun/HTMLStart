@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h2>Contact Us</h2>
+      <h4>Fill out this form to proceed</h4>
+    </header>
+    <section>
+      <form method="post">
+        <label for="user-fname">First name:</label>
+        <input
+          type="text"
+          id="user-fname"
+          name="user-fname"
+          required
+        /><br /><br />
+        <label for="user-email">Email:</label>
+        <input
+          type="email"
+          id="user-email"
+          name="user-email"
+          placeholder="Enter your email"
+          required
+        /><br /><br />
+        <label for="user-password">Password:</label>
+        <input
+          type="password"
+          id="user-password"
+          name="user-password"
+          placeholder="Enter your password"
+          required
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
+          title="Password must be at least 8 characters long, contain at least one uppercase letter,one lowercase letter and one number"
+        /><br /><br />
+
+        <fieldset>
+          <legend>Choose the type of truck that you want to lease:</legend>
+          <br />
+          <input
+            type="radio"
+            id="minivan"
+            name="minivan"
+            value="minivan"
+            
+          />
+          <label for="minivan">Minivan</label><br /><br />
+          <input
+            type="radio"
+            id="boxtruck"
+            name="boxtruck"
+            value="boxtruck"
+            
+          />
+          <label for="boxtruck">Box Truck</label><br /><br />
+          <input
+            type="radio"
+            id="heavytruck"
+            name="heavytruck"
+            value="heavytruck"
+            
+          />
+          <label for="heavytruck">Heavy Truck</label><br /><br />
+        </fieldset>
+
+        <br /><br />
+        <label for="date">Lease start date:</label>
+        <input type="date" id="date" name="date" required min="2024-08-15"/>
+        <!-- set min attribute in date to todays date using javascript maybe??? -->
+        <br /><br />
+        <label for="category-select">Choose a load categoty:</label>
+
+        <select name="category" id="category-select" required>
+          <option value="">--Please choose an option--</option>
+          <option value="Fragile">Fragile Cargo</option>
+          <option value="Value">High-Value Cargo</option>
+          <option value="Hazardous">Hazardous Materials</option>
+          <option value="Fluids">Fluids</option>
+          <option value="Other">Other category</option>
+        </select>
+        <br /><br />
+        <fieldset>
+          <br /><br />
+          <legend>Choose extra services</legend>
+          <input type="checkbox" id="addons1" name="addons1" value="Express" />
+          <label for="addons1"> Express delivery</label><br />
+          <input type="checkbox" id="addons2" name="addons2" value="Long" />
+          <label for="addons2"> Long distance delivery</label><br />
+          <input
+            type="checkbox"
+            id="addons3"
+            name="addons3"
+            value="International"
+          />
+          <label for="addons3"> International delivery</label><br />
+          <input type="checkbox" id="addons4" name="addons4" value="Secure" />
+          <label for="addons3"> Extra secure delivery</label><br />
+          <input type="checkbox" id="addons5" name="addons5" value="Eco" />
+          <label for="addons3"> Eco-friendly delivery</label><br />
+        </fieldset>
+        <br /><br />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
