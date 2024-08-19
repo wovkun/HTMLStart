@@ -11,12 +11,13 @@
       <h4>Fill out this form to proceed</h4>
     </header>
     <section>
-      <form method="post">
+      <form action="" method="post">
         <label for="user-fname">First name:</label>
         <input
           type="text"
           id="user-fname"
           name="user-fname"
+          value="John Doe"
           required
         /><br /><br />
         <label for="user-email">Email:</label>
@@ -24,6 +25,7 @@
           type="email"
           id="user-email"
           name="user-email"
+          value="john.doe@example.com"
           placeholder="Enter your email"
           required
         /><br /><br />
@@ -41,35 +43,29 @@
         <fieldset>
           <legend>Choose the type of truck that you want to lease:</legend>
           <br />
-          <input
-            type="radio"
-            id="minivan"
-            name="minivan"
-            value="minivan"
-            
-          />
+          <input type="radio" id="minivan" name="minivan" value="minivan" />
           <label for="minivan">Minivan</label><br /><br />
-          <input
-            type="radio"
-            id="boxtruck"
-            name="boxtruck"
-            value="boxtruck"
-            
-          />
+          <input type="radio" id="boxtruck" name="boxtruck" value="boxtruck" />
           <label for="boxtruck">Box Truck</label><br /><br />
           <input
             type="radio"
             id="heavytruck"
             name="heavytruck"
             value="heavytruck"
-            
           />
           <label for="heavytruck">Heavy Truck</label><br /><br />
         </fieldset>
 
         <br /><br />
         <label for="date">Lease start date:</label>
-        <input type="date" id="date" name="date" required min="2024-08-15"/>
+        <input
+          type="date"
+          id="date"
+          name="date"
+          required
+          min="2024-08-15"
+          value="2024-09-01"
+        />
         <!-- set min attribute in date to todays date using javascript maybe??? -->
         <br /><br />
         <label for="category-select">Choose a load categoty:</label>
