@@ -1,0 +1,196 @@
+/* main styles */
+.quote-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #000;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.hero-text h1 {
+  font-size: 96px;
+  width: 1000px;
+  margin-top: 90px;
+}
+
+.hero-gif {
+  width: 798px;
+  height: 582px;
+}
+
+.polygon-shape {
+  clip-path: polygon(
+    4% 0,
+    96% 0,
+    100% 4%,
+    100% 96%,
+    96% 100%,
+    4% 100%,
+    0 96%,
+    0 4%
+  );
+}
+
+.hexagon-shape {
+  clip-path: polygon(50% 5%, 90% 27%, 90% 73%, 50% 95%, 10% 73%, 10% 27%);
+}
+
+.contact h4 {
+  font-size: 16px;
+}
+
+.contact a {
+  font-size: 96px;
+  font-weight: 600;
+}
+
+.service-item img {
+  width: 96px;
+  height: 96px;
+}
+
+.service-left-col {
+  background-color: #e16331;
+}
+
+.service-left-text {
+  margin: 74px;
+}
+
+.service-left-text h2 {
+  font-size: 50px;
+  margin-bottom: 86px;
+}
+
+.testimonials-image {
+  height: 335px;
+  width: auto;
+}
+
+.testimonials-text {
+  margin-left: 150px;
+}
+
+.testimonials-text h5 {
+  opacity: 0.6;
+  margin-bottom: 25px;
+}
+
+.testimonials-text h3 {
+  font-weight: 600;
+  font-size: 56px;
+  margin-bottom: 25px;
+}
+
+.testimonials-text p:nth-of-type(1) {
+  margin-bottom: 25px;
+  width: 508px;
+}
+
+.testimonials-text p:nth-of-type(2) {
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.testimonials-text p:nth-of-type(3) {
+  opacity: 0.6;
+  margin-bottom: 25px;
+}
+
+.benefit-image {
+  width: 791px;
+  height: 392px;
+  margin-left: 525px;
+}
+
+.benefit-geometric-background {
+  background-color: #68a2b4;
+  width: 809px;
+  height: 654px;
+  align-self: flex-end;
+  gap: 20px;
+  padding: 70px;
+}
+
+.benefit-item h4 {
+  font-size: 20px;
+  margin: 15px 0 15px 0;
+}
+
+.benefit-geometric-background h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.cons {
+  height: 560px;
+}
+
+.cons-image {
+  background-color: #e16331;
+  width: 134px;
+  height: 134px;
+}
+
+.cons-image img {
+  width: 48px;
+  height: 57px;
+  margin-top: 35px;
+}
+
+.network {
+  height: 534px;
+  padding: 40px;
+}
+
+.network-image:nth-child(1) {
+  width: 208px;
+  height: 174px;
+  object-fit: cover;
+}
+
+.network-image:nth-child(2) {
+  width: 284px;
+  height: 269px;
+  object-fit: cover;
+}
+
+.network-image:last-child {
+  width: 209px;
+  height: 384px;
+  object-fit: cover;
+}
+
+.network-toprated {
+  background-color: #619fb7;
+  padding: 30px;
+  gap: 20px;
+  width: 434px;
+  height: 534px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.network-toprated ul {
+  list-style-type: disc;
+  margin-bottom: 20px;
+}
+
+.network-toprated li {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.network-toprated h3 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.network-toprated .quote-button {
+  background-color: #fff;
+}

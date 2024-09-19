@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/layout.css">
-    <!-- <link rel="stylesheet" href="styles/flex.css"> -->
+    <link rel="stylesheet" href="styles/flex.css">
+    <link rel="stylesheet" href="styles/headerfooter.css">
     <!-- <link rel="stylesheet" href="styles/grid.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
     <title>VIZPOINT</title>
   </head>
 
@@ -25,8 +28,8 @@
         </div>
       </nav>
       <div class="head-interaction">
-        <button type="button">Sign In</button>
-        <button type="button">Sign Up</button>
+        <button type="button" id="signin-button">Sign In</button>
+        <button type="button" id="signup-button">Sign Up</button>
         <select id="interaction-language" name="languages">
           <option value="en">EN</option>
           <option value="ua">UA</option>
@@ -36,45 +39,47 @@
 
     <main>
       <section class="hero" role="banner">
-        <div>
+        <div class="hero-flex">
+        <div class="hero-text">
           <h1>Another viewpoint on transportation services</h1>
-          <img src="image/stock_gif.gif" alt="GIF" />
-          <button type="button">GET A QUOTE</button>
+          <button type="button" class="quote-button">GET A QUOTE &rarr;</button>
+        </div>
+          <img src="image/stock_gif.gif" alt="GIF" class="hero-gif polygon-shape" />
         </div>
       </section>
-      <!-- .service .service-left-col{
-      ....
-    } -->
+
       <section class="service">
-        <article class="service-left-col">
+        <article class="service-left-col polygon-shape">
+          <div class="service-left-text">
           <h2>Providing all solutions for your shipment</h2>
           <p>
             Our friendly professionals can serve you in multiple languages in
             trying to find the best logistic solution for your budget.Our
-            friendly professionals can serve you in multiple lang.
+            friendly professionals can serve you in multiple languages.
           </p>
+        </div>
         </article>
 
         <div class="service-right-col">
         <ul class="services">
           <li class="service-item">
-            <img src="#" alt="Logistics Icon" />
+            <img src="image/Logistics.png" alt="Logistics Icon" />
             <p>Logistics</p>
           </li>
           <li class="service-item">
-            <img src="#" alt="LTL Icon" />
+            <img src="image/LTL.png" alt="LTL Icon" />
             <p>Less Than Truckload Consolidation</p>
           </li>
           <li class="service-item">
-            <img src="#" alt="Freight Icon" />
+            <img src="image/Freight management.png" alt="Freight Icon" />
             <p>Freight Management</p>
           </li>
           <li class="service-item">
-            <img src="#" alt="Expedited Icon" />
+            <img src="image/Expedited.png" alt="Expedited Icon" />
             <p>Expedited Service</p>
           </li>
           <li class="service-item">
-            <img src="#" alt="Warehouse Icon" />
+            <img src="image/Distribution and  warehousing.png" alt="Warehouse Icon" />
             <p>Distribution & Warehousing</p>
           </li>
         </ul>
@@ -84,14 +89,16 @@
       <section class="testimonials">
         <ul class="slider">
           <li>
-            <div class="img-wrapp hexagon">
+            <div class="testimonials-flex">
+            <div>
               <img
                 src="image/stock_man.png"
                 alt="PNG"
+                class="hexagon-shape testimonials-image"
               />
             </div>
             <div class="testimonials-text">
-              <h5>What companies are saying</h5>
+              <h5>What companies are saying...</h5>
               <h3>We are using all vizpoint solutions</h3>
               <p>
                 Our friendly professionals can serve you in multiple languages
@@ -102,19 +109,19 @@
               <p>Michael Sandstorm</p>
               <p>CEO of Watermelon inc.</p>
             </div>
+          </div>
           </li>
         </ul>
       </section>
 
       <section class="benefit">
-        <!-- .benefit .geometric-background{ padding:32px; } -->
-        <article>
-          <img src="image/truck.png" alt="truck" />
-          <div class="geometric-background">
+        <article class="benefit-flex">
+          <img src="image/truck.png" alt="truck" class="benefit-image polygon-shape"/>
+          <div class="benefit-geometric-background polygon-shape">
             <h2>Benefit from our experience</h2>
             <div class="benefits">
               <div class="benefit-item">
-                <img src="#" alt="Icon" />
+                <img src="image/box.png" alt="Icon" />
                 <div>
                   <h4>Access to Professionals</h4>
                   <p>
@@ -124,7 +131,7 @@
                 </div>
               </div>
               <div class="benefit-item">
-                <img src="#" alt="Icon" />
+                <img src="image/box.png" alt="Icon" />
                 <div>
                   <h4>Shipment Protection</h4>
                   <p>
@@ -134,7 +141,7 @@
                 </div>
               </div>
               <div class="benefit-item">
-                <img src="#" alt="Icon" />
+                <img src="image/box.png" alt="Icon" />
                 <div>
                   <h4>Peace of Mind</h4>
                   <p>
@@ -144,7 +151,7 @@
                 </div>
               </div>
               <div class="benefit-item">
-                <img src="#" alt="Icon" />
+                <img src="image/box.png" alt="Icon" />
                 <div>
                   <h4>Top Rated Network</h4>
                   <p>
@@ -158,13 +165,12 @@
         </article>
       </section>
 
-      <!-- .cons .geometric-background{ padding:10px; } -->
       <section class="cons">
-        <ul>
+        <ul class="cons-wrapper">
           <li>
             <div class="cons-item">
-              <div class="geometric-background">
-                <img src="#" alt="Icon" />
+              <div class="cons-image polygon-shape">
+                <img src="image/box.png" alt="Icon" />
               </div>
               <div class="cons-text">
                 <p>
@@ -176,8 +182,8 @@
           </li>
           <li>
             <div class="cons-item">
-              <div class="geometric-background">
-                <img src="#" alt="Icon" />
+              <div class="cons-image polygon-shape">
+                <img src="image/box.png" alt="Icon" />
               </div>
               <div class="cons-text">
                 <p>Boutique 3PL with tailored solutions to any size customer</p>
@@ -186,8 +192,8 @@
           </li>
           <li>
             <div class="cons-item">
-              <div class="geometric-background">
-                <img src="#" alt="Icon" />
+              <div class="cons-image polygon-shape">
+                <img src="image/box.png" alt="Icon" />
               </div>
               <div class="cons-text">
                 <p>
@@ -201,10 +207,10 @@
       </section>
 
       <div class="network">
-        <section>
-          <img src="image/metal.png" alt="metal" />
-          <img src="image/experiment.png" alt="experiment" />
-          <div class="network-toprated">
+        <section class="network-wrapper">
+          <img src="image/metal.png" alt="metal" class="network-image polygon-shape"/>
+          <img src="image/experiment.png" alt="experiment" class="network-image polygon-shape" />
+          <div class="network-toprated polygon-shape">
             <h3>Top Rated Network</h3>
             <ul>
               <li>Food Industry</li>
@@ -216,26 +222,25 @@
               <li>Electronics</li>
               <li>Steel & Aluminium</li>
             </ul>
-            <button type="button">GET A QUOTE</button>
+            <button type="button" class="quote-button">GET A QUOTE</button>
           </div>
-          <img src="image/cola.png" alt="cola" />
+          <img src="image/cola.png" alt="cola" class="network-image polygon-shape" />
         </section>
       </div>
 
       <div class="contact">
         <section>
           <h4>
-            Want to grab coffe or talk about building something great together?
+            Want to grab coffee or talk about building something great together?
           </h4>
-          <div>
-            <a href="mailto:welcome@vizpoint.net">welcome@vizpoint.net</a>
-            <a href="tel:9169561059">916-956-1059</a>
-          </div>
+            <a href="mailto:welcome@vizpoint.net" >welcome@vizpoint.net</a>
+            <a href="tel:9169561059" >916-956-1059</a>
         </section>
       </div>
     </main>
 
     <footer>
+      <div class="footer-content">
       <div class="column1" aria-details="Footer menu column 1">
         <h5>Company</h5>
         <ul>
@@ -280,14 +285,16 @@
           </li>
           <li><a href="tel:9169561059">916-956-1059</a></li>
           <li>
-            <address>1155 Frontenac Rd, Naperville, IL 60563</address>
+            <address>1155 Frontenac Rd, <br></br> Naperville, IL 60563</address>
+          </li>
+          <div class="icon-container">
+          <li>
+            <a href="#" target="_blank"><img src="image/facebook-svgrepo-com.png" alt="Facebook" class="footer-icon"/></a>
           </li>
           <li>
-            <a href="#" target="_blank"><img src="" alt="Facebook" /></a>
+            <a href="#" target="_blank"><img src="image/instagram-svgrepo-com (1).png" alt="Instagram" class="footer-icon" /></a>
           </li>
-          <li>
-            <a href="#" target="_blank"><img src="" alt="Instagram" /></a>
-          </li>
+        </div>
         </ul>
       </div>
 
@@ -296,10 +303,10 @@
         <p>Coming Soon In:</p>
         <ul>
           <li>
-            <a href="#" target="_blank"><img src="" alt="App Store" /></a>
+            <a href="#" target="_blank"><img src="image/app-store-svgrepo-com (1).png" alt="App Store" class="footer-store" /></a>
           </li>
           <li>
-            <a href="#" target="_blank"><img src="" alt="Google Play" /></a>
+            <a href="#" target="_blank"><img src="image/google-play-svgrepo-com.png" alt="Google Play" class="footer-store" /></a>
           </li>
         </ul>
       </div>
@@ -320,6 +327,7 @@
       <div class="copyright">
         <p>Copyright &copy; 2027 by The VIZ.</p>
       </div>
+    </div>
     </footer>
   </body>
 </html>

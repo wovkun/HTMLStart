@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* get rid of annoying gap */
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header,
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* header styles */
+
+.head-nav a:link,
+.contact a:link {
+  color: #000;
+  text-decoration: none;
+}
+
+.head-nav a:visited,
+.contact a:visited {
+  color: #000;
+}
+
+.head-nav a:hover,
+.contact a:hover {
+  color: #e16331;
+  transition: color 0.3s ease;
+}
+
+header {
+  margin: 25px auto 25px auto;
+}
+
+.logo-img {
+  width: 240px;
+  height: 30px;
+}
+
+.nav-hyperlinks ul {
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#interaction-language {
+  font-size: 16px;
+  border: none;
+  background: none;
+  font-weight: 700;
+}
+
+#signup-button:hover,
+.quote-button:hover {
+  background-color: #e16331;
+  transition: background-color 0.5s ease;
+}
+/* also could possibly try to make the border corners look sharper?? */
+
+#signup-button,
+#signin-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+}
+
+#signup-button {
+  border: 2px solid #000;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+#signin-button {
+  border: none;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.nav-hyperlinks ul {
+  display: flex;
+  gap: 50px;
+}
+
+.language-options ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+/* end header styles */
+#signin-button:hover {
+  color: #e16331;
+  transition: color 0.3s ease;
+}
+/* footer styles */
+footer {
+  background-color: #090515;
+}
+
+.footer-content {
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+  color: #f4f4f4;
+}
+
+.footer-content ul {
+  list-style-type: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.footer-content a:link {
+  font-size: 14px;
+}
+
+.footer-content a:visited,
+.footer-content a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  color: #e16331;
+  transition: color 0.3s ease;
+}
+
+.footer-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-store {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+.footer-content li,
+.footer-content p {
+  margin-right: 18px;
+  margin-top: 11px;
+}
+
+.footer-content h5 {
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+.column6 {
+  flex-basis: 100%;
+}
+
+.copyright {
+  flex-basis: 100%;
+  font-size: 12px;
+  padding-top: 35px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+/* end footer styles */
+
+/* contact styles */
+.contact section {
+  height: 518px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}

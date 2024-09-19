@@ -1,0 +1,133 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  height: 582px;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  position: absolute;
+}
+
+.hero-gif {
+  position: relative;
+}
+
+.hero-flex .quote-button {
+  display: block;
+  margin-top: 500px;
+}
+
+/* couldnt figure out how to overlap text over photo /hardcoded it */
+
+.service {
+  display: flex;
+  height: 553px;
+}
+.service-left-col {
+  width: 820px;
+  align-content: center;
+}
+
+.service-right-col ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 74px;
+}
+
+.service-item {
+  flex: 0 0 33.33%;
+  margin-bottom: 35px;
+}
+
+.testimonials-flex {
+  margin: 140px 70px 140px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 612px;
+}
+
+.benefit-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  height: 794px;
+}
+
+.benefit-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(0, -50px);
+  z-index: 1;
+}
+
+.benefit-geometric-background {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-content: center;
+}
+
+.benefit-item {
+  flex: 1 1 calc(50% - 20px);
+  padding: 10px;
+}
+
+.cons {
+  display: flex;
+  align-items: center;
+}
+
+.cons-wrapper {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cons-item {
+  align-self: center;
+  flex: 1 1 33%;
+  margin: 100px 75px 100px 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.cons-wrapper {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0;
+}
+
+.network-wrapper {
+  display: flex;
+}
