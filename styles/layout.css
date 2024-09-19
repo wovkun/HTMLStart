@@ -71,10 +71,6 @@
   width: auto;
 }
 
-.testimonials-text {
-  margin-left: 150px;
-}
-
 .testimonials-text h5 {
   opacity: 0.6;
   margin-bottom: 25px;
@@ -104,7 +100,7 @@
 .benefit-image {
   width: 791px;
   height: 392px;
-  margin-left: 525px;
+
 }
 
 .benefit-geometric-background {
@@ -175,6 +171,7 @@
   flex-direction: column;
   text-align: center;
 }
+
 .network-toprated ul {
   list-style-type: disc;
   margin-bottom: 20px;

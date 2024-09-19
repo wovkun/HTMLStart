@@ -59,9 +59,12 @@ main {
   height: 612px;
 }
 
+.testimonials-text {
+  margin-left: 150px;
+}
+
 .benefit-flex {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   position: relative;
@@ -74,10 +77,10 @@ main {
   right: 0;
   transform: translate(0, -50px);
   z-index: 1;
+  margin-left: 525px;
 }
 
 .benefit-geometric-background {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,6 +110,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  list-style: none;
+  gap: 20px;
 }
 
 .cons-item {
@@ -118,14 +123,6 @@ main {
   align-items: center;
   text-align: center;
   gap: 10px;
-}
-
-.cons-wrapper {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 0;
 }
 
 .network-wrapper {
