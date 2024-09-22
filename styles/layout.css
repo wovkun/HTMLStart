@@ -14,7 +14,6 @@
 .hero-text h1 {
   font-size: 96px;
   width: 1000px;
-  margin-top: 90px;
 }
 
 .hero-gif {
@@ -65,6 +64,69 @@
   font-size: 50px;
   margin-bottom: 86px;
 }
+  
+/* flex parts of the design where i thinks theres no point in rewriting them in grid*/
+.service-right-col ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 74px;
+}
+
+.service-item {
+  flex: 0 0 33.33%;
+  margin-bottom: 35px;
+}
+
+.testimonials-wrapper{
+  height: 612px;
+}
+
+
+.cons {
+  display: flex;
+  align-items: center;
+}
+
+.cons-wrapper {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.cons-item {
+  align-self: center;
+  flex: 1 1 33%;
+  margin: 100px 75px 100px 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+
+.benefit-geometric-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-content: center;
+}
+
+.benefit-item {
+  flex: 1 1 calc(50% - 20px);
+  padding: 10px;
+}
 
 .testimonials-image {
   height: 335px;
@@ -107,7 +169,6 @@
   background-color: #68a2b4;
   width: 809px;
   height: 654px;
-  align-self: flex-end;
   gap: 20px;
   padding: 70px;
 }
