@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles/forms.css" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
@@ -12,7 +14,7 @@
     </header>
     <section>
       <form action="" method="post">
-        <label for="user-fname">First name:</label>
+        <label for="user-fname" class="fname-label">First name:</label>
         <input
           type="text"
           id="user-fname"
@@ -20,7 +22,7 @@
           value="John Doe"
           required
         /><br /><br />
-        <label for="user-email">Email:</label>
+        <label for="user-email" class="email-label">Email:</label>
         <input
           type="email"
           id="user-email"
@@ -29,7 +31,7 @@
           placeholder="Enter your email"
           required
         /><br /><br />
-        <label for="user-password">Password:</label>
+        <label for="user-password" class="password-label">Password:</label>
         <input
           type="password"
           id="user-password"
@@ -40,7 +42,7 @@
           title="Password must be at least 8 characters long, contain at least one uppercase letter,one lowercase letter and one number"
         /><br /><br />
 
-        <fieldset>
+        <fieldset class="truck-input">
           <legend>Choose the type of truck that you want to lease:</legend>
           <br />
           <input type="radio" id="minivan" name="minivan" value="minivan" />
@@ -57,7 +59,7 @@
         </fieldset>
 
         <br /><br />
-        <label for="date">Lease start date:</label>
+        <label for="date" class="date-label">Lease start date:</label>
         <input
           type="date"
           id="date"
@@ -65,12 +67,13 @@
           required
           min="2024-08-15"
           value="2024-09-01"
+          class="date-input"
         />
         <!-- set min attribute in date to todays date using javascript maybe??? -->
         <br /><br />
-        <label for="category-select">Choose a load categoty:</label>
+        <label for="category-select" class="category-label">Choose a load categoty:</label>
 
-        <select name="category" id="category-select" required>
+        <select name="category" id="category-select" required class="category-input">
           <option value="">--Please choose an option--</option>
           <option value="Fragile">Fragile Cargo</option>
           <option value="Value">High-Value Cargo</option>
@@ -79,24 +82,28 @@
           <option value="Other">Other category</option>
         </select>
         <br /><br />
-        <fieldset>
-          <br /><br />
+        <fieldset class="extra-services">
           <legend>Choose extra services</legend>
-          <input type="checkbox" id="addons1" name="addons1" value="Express" />
-          <label for="addons1"> Express delivery</label><br />
-          <input type="checkbox" id="addons2" name="addons2" value="Long" />
-          <label for="addons2"> Long distance delivery</label><br />
-          <input
-            type="checkbox"
-            id="addons3"
-            name="addons3"
-            value="International"
-          />
-          <label for="addons3"> International delivery</label><br />
-          <input type="checkbox" id="addons4" name="addons4" value="Secure" />
-          <label for="addons3"> Extra secure delivery</label><br />
-          <input type="checkbox" id="addons5" name="addons5" value="Eco" />
-          <label for="addons3"> Eco-friendly delivery</label><br />
+          <div class="service-option">
+            <input type="checkbox" id="addons1" name="addons1" value="Express" />
+            <label for="addons1">Express delivery</label>
+          </div>
+          <div class="service-option">
+            <input type="checkbox" id="addons2" name="addons2" value="Long" />
+            <label for="addons2">Long distance delivery</label>
+          </div>
+          <div class="service-option">
+            <input type="checkbox" id="addons3" name="addons3" value="International" />
+            <label for="addons3">International delivery</label>
+          </div>
+          <div class="service-option">
+            <input type="checkbox" id="addons4" name="addons4" value="Secure" />
+            <label for="addons4">Extra secure delivery</label>
+          </div>
+          <div class="service-option">
+            <input type="checkbox" id="addons5" name="addons5" value="Eco" />
+            <label for="addons5">Eco-friendly delivery</label>
+          </div>
         </fieldset>
         <br /><br />
         <button type="submit">Submit</button>

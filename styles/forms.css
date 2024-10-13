@@ -1,0 +1,140 @@
+:root {
+  --form-color: #dce2f0;
+  --background-color: #50586c;
+  --text-color: #070606;
+  --button-bg: #007bff;
+  --button-hover-bg: #0056b3;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --form-color: #d4b996;
+    --background-color: #a07855;
+    --text-color: #ffffff;
+    --button-bg: #0066cc;
+    --button-hover-bg: #004b99;
+  }
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+form {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'fname email'
+    'password password'
+    'truck truck'
+    'date date'
+    'category category'
+    'services services'
+    'submit submit';
+  gap: 1rem;
+  padding: 2rem;
+  width: 800px;
+  background-color: var(--form-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  margin: 1rem;
+}
+
+header h2 {
+  font-weight: 700;
+}
+
+header h4 {
+  font-weight: 400;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#user-fname,
+.fname-label {
+  grid-area: fname;
+}
+
+#user-email,
+.email-label {
+  grid-area: email;
+}
+
+#user-password,
+.password-label {
+  grid-area: password;
+}
+
+.truck-input {
+  grid-area: truck;
+}
+
+.date-input,
+.date-label {
+  grid-area: date;
+}
+
+.category-label,
+.category-input {
+  grid-area: category;
+}
+
+.extra-services {
+  grid-area: services;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.service-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+button {
+  grid-area: submit;
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover-bg);
+}

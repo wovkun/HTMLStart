@@ -1,3 +1,8 @@
+:root{
+  --peach-orange: #e16331;
+  --solid-black: #000
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,18 +28,18 @@ main {
 
 .head-nav a:link,
 .contact a:link {
-  color: #000;
+  color: var(--solid-black);
   text-decoration: none;
 }
 
 .head-nav a:visited,
 .contact a:visited {
-  color: #000;
+  color: var(--solid-black);
 }
 
 .head-nav a:hover,
 .contact a:hover {
-  color: #e16331;
+  color: var(--peach-orange);
   transition: color 0.3s ease;
 }
 
@@ -63,7 +68,7 @@ header {
 
 #signup-button:hover,
 .quote-button:hover {
-  background-color: #e16331;
+  color: var(--peach-orange);
   transition: background-color 0.5s ease;
 }
 /* also could possibly try to make the border corners look sharper?? */
@@ -79,7 +84,7 @@ header {
 }
 
 #signup-button {
-  border: 2px solid #000;
+  border: 2px solid var(--solid-black);
   border-radius: 8px;
   margin-right: 20px;
 }
@@ -108,7 +113,7 @@ header {
 
 /* end header styles */
 #signin-button:hover {
-  color: #e16331;
+  color: var(--peach-orange);;
   transition: color 0.3s ease;
 }
 /* footer styles */
@@ -144,7 +149,7 @@ footer {
 }
 
 .footer-content a:hover {
-  color: #e16331;
+  color: var(--peach-orange);;
   transition: color 0.3s ease;
 }
 
