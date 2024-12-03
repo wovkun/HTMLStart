@@ -138,3 +138,27 @@ button {
 button:hover {
   background-color: var(--button-hover-bg);
 }
+
+.input:hover + .styleMe{
+  color: green;
+}
+
+.input:hover + .styleMe + .styleMe2{
+  color: violet;
+}
+
+.input:focus + .styleMe {
+  color: violet;
+}
+
+.input:focus + .styleMe + .styleMe2 {
+  color: blue;
+}
+
+.input:valid + .styleMe {
+  color: yellow;
+}
+
+.input:valid + .styleMe + .styleMe2 {
+  color: red;
+}

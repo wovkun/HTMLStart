@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="styles/forms.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/forms.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
@@ -14,14 +17,20 @@
     </header>
     <section>
       <form action="" method="post">
-        <label for="user-fname" class="fname-label">First name:</label>
-        <input
-          type="text"
-          id="user-fname"
-          name="user-fname"
-          value="John Doe"
-          required
-        /><br /><br />
+        <label for="user-fname" class="fname-label"
+          >First name:
+          <input
+            type="text"
+            id="user-fname"
+            class="input"
+            name="user-fname"
+            value="John Doe"
+            pattern="\w{3,16}"
+            required
+          />
+          <span class="styleMe">Span foo 1</span>
+          <span class="styleMe2">Span foo 2</span> </label
+        ><br /><br />
         <label for="user-email" class="email-label">Email:</label>
         <input
           type="email"
@@ -71,9 +80,16 @@
         />
         <!-- set min attribute in date to todays date using javascript maybe??? -->
         <br /><br />
-        <label for="category-select" class="category-label">Choose a load categoty:</label>
+        <label for="category-select" class="category-label"
+          >Choose a load categoty:</label
+        >
 
-        <select name="category" id="category-select" required class="category-input">
+        <select
+          name="category"
+          id="category-select"
+          required
+          class="category-input"
+        >
           <option value="">--Please choose an option--</option>
           <option value="Fragile">Fragile Cargo</option>
           <option value="Value">High-Value Cargo</option>
@@ -85,7 +101,12 @@
         <fieldset class="extra-services">
           <legend>Choose extra services</legend>
           <div class="service-option">
-            <input type="checkbox" id="addons1" name="addons1" value="Express" />
+            <input
+              type="checkbox"
+              id="addons1"
+              name="addons1"
+              value="Express"
+            />
             <label for="addons1">Express delivery</label>
           </div>
           <div class="service-option">
@@ -93,7 +114,12 @@
             <label for="addons2">Long distance delivery</label>
           </div>
           <div class="service-option">
-            <input type="checkbox" id="addons3" name="addons3" value="International" />
+            <input
+              type="checkbox"
+              id="addons3"
+              name="addons3"
+              value="International"
+            />
             <label for="addons3">International delivery</label>
           </div>
           <div class="service-option">
