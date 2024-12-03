@@ -162,3 +162,15 @@ button:hover {
 .input:valid + .styleMe + .styleMe2 {
   color: red;
 }
+.icon path {
+  fill: red;
+  transition: fill 0.3s ease;
+}
+
+.icon:hover path {
+  fill: green;
+}
+
+.phone{
+  margin-left: 120px;
+}
